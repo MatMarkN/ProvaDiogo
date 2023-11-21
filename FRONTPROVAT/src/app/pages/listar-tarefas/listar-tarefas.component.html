@@ -1,0 +1,20 @@
+<h1>Total de Tarefas</h1>
+
+<table id="table">
+  <tr>
+    <th>Id</th>
+    <th>Titulo</th>
+    <th>Criado Em</th>
+    <th>Categoria ID</th>
+    <th>Status</th>
+
+  </tr>
+  <tr *ngFor="let t of tarefa">
+    <td>{{ t.tarefaId }}</td>
+    <td>{{ t.titulo }}</td>
+    <td>{{ t.criadoEm | date: 'dd/MM/yyyy' }}</td>
+    <td>{{ t.categoriaId }}</td>
+    <td>{{ t.status }}</td>
+
+</tr>
+</table>
