@@ -1,0 +1,12 @@
+@base_url = http://localhost:5026/api/categoria
+
+### Listar Categorias ###
+GET {{base_url}}/listar
+
+### Criar Categoria ###
+POST {{base_url}}/cadastrar
+Content-Type: application/json
+
+{
+    "nome": "Teste"
+}
